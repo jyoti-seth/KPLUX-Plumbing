@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KPLUX | Plumbing & Heating Experts</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Font Awesome (REQUIRED for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Custom JS (use defer so HTML loads first) -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js" defer></script>
+</head>
+
+<body class="text-slate-800">
+
+    <nav class="flex items-center justify-between px-6 py-4 bg-white shadow-sm sticky top-0 z-50">
+    <div class="text-3xl font-bold text-primary">KPLUX</div>
+
+    <!-- Hamburger Button (Mobile Only) -->
+    <button id="menuBtn" class="md:hidden text-3xl focus:outline-none">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex space-x-8 font-medium">
+        <a href="#" class="text-primary border-b-2 border-primary">Home</a>
+        <a href="#" class="hover:text-primary">About</a>
+        <a href="#" class="hover:text-primary">Services <i class="fa-solid fa-chevron-down text-xs"></i></a>
+        <a href="#" class="hover:text-primary">Blog</a>
+        <a href="#" class="hover:text-primary">Contact</a>
+    </div>
+
+    <!-- Desktop Phone + Button -->
+    <div class="hidden lg:flex items-center space-x-6">
+        <div class="flex items-center text-red-700 font-bold">
+            <i class="fa-solid fa-phone mr-2"></i> (760) 696-8781
+        </div>
+        <a href="#" class="bg-accent px-6 py-3 rounded-md font-bold text-sm flex items-center shadow-md">
+            Request Service <i class="fa-solid fa-chevron-right ml-2"></i>
+        </a>
+    </div>
+</nav>
+
+<!-- MOBILE MENU DROPDOWN -->
+<div id="mobileMenu" class="md:hidden hidden flex-col bg-white shadow-lg px-6 py-4 space-y-4">
+    <a href="#" class="font-medium text-primary border-l-4 border-primary pl-2">Home</a>
+    <a href="#" class="font-medium hover:text-primary">About</a>
+    <a href="#" class="font-medium hover:text-primary">Services</a>
+    <a href="#" class="font-medium hover:text-primary">Blog</a>
+    <a href="#" class="font-medium hover:text-primary">Contact</a>
+
+    <div class="border-t pt-4">
+        <div class="flex items-center text-red-700 font-bold mb-4">
+            <i class="fa-solid fa-phone mr-2"></i> (760) 696-8781
+        </div>
+
+        <a href="#" class="bg-accent px-6 py-3 rounded-md font-bold text-sm flex items-center shadow-md w-full justify-center">
+            Request Service <i class="fa-solid fa-chevron-right ml-2"></i>
+        </a>
+    </div>
+</div>
+
+
+    <section class="bg-primary text-white flex flex-col md:flex-row items-center px-10 py-16 overflow-hidden">
+        <div class="md:w-1/2 space-y-6">
+            <h1 class="text-5xl md:text-7xl font-bold leading-tight">Plumbing <br>& Heating <br>Experts</h1>
+            <p class="text-lg opacity-90 max-w-md">Fast, reliable solutions for homes and businesses. From repairs to installations, we've got you covered.</p>
+            <div class="flex flex-wrap gap-4 pt-4">
+                <button class="bg-accent text-black px-8 py-4 rounded-md font-bold flex items-center">Request Service <i class="fa-solid fa-chevron-right ml-2"></i></button>
+                <div class="flex items-center text-xl font-bold ml-4"><i class="fa-solid fa-phone mr-2"></i> (760) 696-8781</div>
+            </div>
+            <div class="grid grid-cols-2 gap-4 pt-8 text-sm">
+                <div class="flex items-center"><i class="fa-solid fa-award mr-2 opacity-70"></i> Licensed</div>
+                <div class="flex items-center"><i class="fa-solid fa-clock mr-2 opacity-70"></i> 24/7 Service</div>
+                <div class="flex items-center"><i class="fa-solid fa-tag mr-2 opacity-70"></i> Upfront Pricing</div>
+                <div class="flex items-center"><i class="fa-solid fa-house-user mr-2 opacity-70"></i> Family Owned</div>
+            </div>
+        </div>
+        <div class="md:w-1/2 relative mt-12 md:mt-0 flex justify-center">
+            <img src="images\Container.png" alt="Expert Plumber" class="relative z-10">
+        </div>
+    </section>
+
+    <section class="py-20 px-10 grid md:grid-cols-2 gap-16 items-center">
+        <div class="grid grid-cols-2 gap-4">
+            <img src="images\Rectangle 6.png" class="rounded-lg shadow-xl" alt="Worker">
+            <div class="bg-primary text-white p-8 rounded-lg flex flex-col justify-center items-center text-center">
+                <h3 class="text-4xl font-bold">11K+</h3>
+                <p>Projects Completed</p>
+            </div>
+            <div class="bg-primary text-white p-8 rounded-lg flex flex-col justify-center items-center text-center">
+                <p>Available</p>
+                <h3 class="text-4xl font-bold text-accent">24/7</h3>
+                <p>All Days</p>
+            </div>
+            <img src="images\Rectangle 7.png" class="rounded-lg shadow-xl" alt="Repair">
+        </div>
+        <div class="space-y-6">
+            <h6 class="font-bold text-sm tracking-widest uppercase">About Us</h6>
+            <h2 class="text-4xl md:text-5xl font-bold">Experience the <span class="text-primary">KPLUX</span> Difference</h2>
+            <p class="text-slate-600 leading-relaxed"> The KPLUX difference goes beyond just great service—it's built on trust, delivered with speed, and backed by precision. With years of hands-on experience, our expert team brings unmatched attention to detail and a deep commitment to quality. From quick fixes to full system installations, we ensure your home stays safe, warm, and running smoothly all year long. At KPLUX, your comfort isn't just a goal—it’s our guarantee.</p>
+            <p class="text-slate-600">The KPLUX difference is all about trust, speed, and precision. Our team brings years of experience, attention to detail, and a commitment to keeping your home safe, warm, and running efficiently—all year round.</p>
+            <button class="bg-accent px-8 py-3 rounded-md font-bold shadow-md">Read More <i class="fa-solid fa-chevron-right ml-2 text-xs"></i></button>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 bg-slate-50">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h6 class="uppercase font-bold text-xs tracking-widest mb-2">Our Services</h6>
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">From Leaks to Heat — <span class="text-primary">We've Got You</span></h2>
+            <p class="text-slate-500 text-sm">From leaks and blockages to heating repairs, we've got you covered. Quick, reliable service to keep your home warm, safe, and running smoothly—anytime you need us.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div class="service-card bg-white rounded-3xl shadow-xl overflow-hidden">
+                <img src="images\drain.png" class="w-full h-48 object-cover" alt="Drain Cleaning">
+                <div class="bg-primary p-5 flex items-center space-x-4 text-white">
+                    <i class="fa-solid fa-faucet-drip text-2xl"></i>
+                    <h3 class="text-xl font-bold">Drain Cleaning</h3>
+                </div>
+                <div class="p-8">
+                    <p class="text-slate-500 text-sm mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
+                    <a href="#" class="font-bold text-sm flex items-center hover:text-primary">Read More <i class="fa-solid fa-chevron-right ml-2 text-xs"></i></a>
+                </div>
+            </div>
+
+            <div class="service-card bg-white rounded-3xl shadow-xl overflow-hidden">
+                <img src="images\drain2.png" class="w-full h-48 object-cover" alt="Leak Detection">
+                <div class="bg-primary p-5 flex items-center space-x-4 text-white">
+                    <i class="fa-solid fa-droplet-slash text-2xl"></i>
+                    <h3 class="text-xl font-bold">Leak Detection</h3>
+                </div>
+                <div class="p-8">
+                    <p class="text-slate-500 text-sm mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
+                    <a href="#" class="font-bold text-sm flex items-center hover:text-primary">Read More <i class="fa-solid fa-chevron-right ml-2 text-xs"></i></a>
+                </div>
+            </div>
+
+            <div class="service-card bg-white rounded-3xl shadow-xl overflow-hidden">
+                <img src="images\drain1.png" class="w-full h-48 object-cover" alt="Water Heater">
+                <div class="bg-primary p-5 flex items-center space-x-4 text-white">
+                    <i class="fa-solid fa-hot-tub-person text-2xl"></i>
+                    <h3 class="text-xl font-bold">Water Heater Repair & Install</h3>
+                </div>
+                <div class="p-8">
+                    <p class="text-slate-500 text-sm mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
+                    <a href="#" class="font-bold text-sm flex items-center hover:text-primary">Read More <i class="fa-solid fa-chevron-right ml-2 text-xs"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-20 px-6 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-1/2 space-y-6">
+            <h6 class="uppercase font-bold text-xs tracking-widest">Why Choose Us</h6>
+            <h2 class="text-4xl md:text-5xl font-bold leading-tight">Why Homeowners Trust <span class="text-primary">KPLUX</span></h2>
+            <p class="text-slate-500 leading-relaxed">The KPLUX difference is all about trust, speed, and precision. Our team brings years of experience, attention to detail, and a commitment to keeping your home safe, warm, and running efficiently—all year round.</p>
+            
+            <div class="space-y-4 pt-4">
+                <div class="flex items-center space-x-4 font-bold"><i class="fa-solid fa-award text-primary bg-slate-100 p-3 rounded-full"></i> <span>Licensed</span></div>
+                <div class="flex items-center space-x-4 font-bold"><i class="fa-solid fa-clock text-primary bg-slate-100 p-3 rounded-full"></i> <span>24/7 Service</span></div>
+                <div class="flex items-center space-x-4 font-bold"><i class="fa-solid fa-tag text-primary bg-slate-100 p-3 rounded-full"></i> <span>Upfront Pricing</span></div>
+                <div class="flex items-center space-x-4 font-bold"><i class="fa-solid fa-house-user text-primary bg-slate-100 p-3 rounded-full"></i> <span>Family Owned</span></div>
+            </div>
+
+            <button class="bg-accent px-8 py-4 rounded-md font-bold shadow-md mt-6 flex items-center">Explore Services <i class="fa-solid fa-chevron-right ml-2 text-xs"></i></button>
+        </div>
+
+        <div class="md:w-1/2 relative">
+            <img src="images\why-choose.jpg" class="rounded-3xl shadow-2xl" alt="Lead Technician">
+            <div class="absolute -bottom-10 -left-10 md:-left-20 bg-white p-3 rounded-3xl shadow-2xl border-4 border-white hidden sm:block">
+                <img src="images\drain1.png" class="rounded-2xl" alt="Technician working">
+            </div>
+        </div>
+    </section>
+
+
+     <section class="bg-primary py-12 px-10 text-center text-white">
+        <p class="uppercase text-xs tracking-widest mb-6 opacity-80">Industry Affiliations</p>
+        <h2 class="text-3xl font-bold mb-4">Trusted by Locals, <span class="text-accent">Preferred by All</span></h2>
+        <p class="max-w-2xl mx-auto opacity-80 mb-10 text-sm">KPLUX is the go-to choice for locals who value skill, speed, and service. Our trusted team delivers results that speak for themselves.</p>
+        <div class="flex flex-wrap justify-center gap-12 items-center opacity-90 grayscale brightness-200">
+            <span class="text-2xl font-bold italic">KOHLER</span>
+            <span class="text-2xl font-bold italic">TOTO</span>
+            <span class="text-2xl font-bold italic">DELTA</span>
+            <span class="text-2xl font-bold italic">Pfister</span>
+            <span class="text-2xl font-bold italic">GROHE</span>
+        </div>
+    </section>
+
+<section class="py-20 px-6 max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+        <h6 class="uppercase font-bold text-xs tracking-widest mb-2">TESTIMONIALS</h6>
+        <h2 class="text-4xl md:text-5xl font-bold">
+            Read Reviews, <span class="text-primary">ride with confidence.</span>
+        </h2>
+        <div class="mt-4 flex justify-center">
+            <div class="border border-green-500 rounded-full px-4 py-2 flex items-center space-x-2 text-sm">
+                <img src="images/review.png" class="w-6" alt="rating">
+            </div>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
+
+        <!-- LEFT TEXT -->
+        <div class="col-span-1">
+            <i class="fa-solid fa-quote-left text-6xl text-slate-700 mb-6"></i>
+            <h3 class="text-4xl font-bold leading-tight">What our customers are saying</h3>
+            <div class="border-b-4 border-slate-600 mt-4 w-3/4"></div>
+        </div>
+
+        <!-- RIGHT SLIDER (2 CARDS) -->
+        <div class="col-span-2">
+            <div class="swiper mySwiper">
+
+                <div class="swiper-wrapper">
+
+                    <!-- CARD 1 -->
+                    <div class="swiper-slide">
+                        <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-100">
+                            <p class="text-slate-500 text-sm mb-8 leading-relaxed">
+                                The KPLUX difference is all about trust, speed, and precision...
+                            </p>
+                            <div class="flex items-center space-x-4">
+                                <img src="images/user.jpg" class="rounded-full w-12 h-12" alt="User">
+                                <div>
+                                    <h5 class="font-bold">Artemisia Udinese</h5>
+                                    <p class="text-xs text-slate-400">Marketing Specialist</p>
+                                    <div class="text-orange-400 text-xs">★★★★★</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 2 -->
+                    <div class="swiper-slide">
+                        <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-100">
+                            <p class="text-slate-500 text-sm mb-8 leading-relaxed">
+                                The KPLUX difference is all about trust, speed, and precision...
+                            </p>
+                            <div class="flex items-center space-x-4">
+                                <img src="images/user.jpg" class="rounded-full w-12 h-12" alt="User">
+                                <div>
+                                    <h5 class="font-bold">Artemisia Udinese</h5>
+                                    <p class="text-xs text-slate-400">Marketing Specialist</p>
+                                    <div class="text-orange-400 text-xs">★★★★★</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="swiper-slide">
+                        <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-100">
+                            <p class="text-slate-500 text-sm mb-8 leading-relaxed">
+                                Amazing service! Very reliable and professional…
+                            </p>
+                            <div class="flex items-center space-x-4">
+                                <img src="images/user.jpg" class="rounded-full w-12 h-12" alt="User">
+                                <div>
+                                    <h5 class="font-bold">John Doe</h5>
+                                    <p class="text-xs text-slate-400">Homeowner</p>
+                                    <div class="text-orange-400 text-xs">★★★★★</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- arrows -->
+                <div class="flex justify-center space-x-4 mt-6">
+                    <div class="swiper-button-prev !static !w-10 !h-10 !bg-gray-200 !rounded-full"></div>
+                    <div class="swiper-button-next !static !w-10 !h-10 !bg-gray-200 !rounded-full"></div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+    <section class="bg-primary text-white py-20 px-10">
+        <div class="grid md:grid-cols-2 gap-16 max-w-6xl mx-auto">
+            <div class="space-y-8">
+                <h6 class="uppercase tracking-widest text-sm">Contact Us</h6>
+                <h2 class="text-5xl font-bold">Get In Touch</h2>
+                <div class="space-y-4">
+                    <div class="flex items-center"><i class="fa-solid fa-location-dot mr-4 bg-white/10 p-3 rounded-full"></i> 549 W Market St, Akron, Ohio, 44303</div>
+                    <div class="flex items-center"><i class="fa-solid fa-phone mr-4 bg-white/10 p-3 rounded-full"></i> (760) 696-8781</div>
+                    <div class="flex items-center"><i class="fa-solid fa-envelope mr-4 bg-white/10 p-3 rounded-full"></i> Info@KpluxPlumbingSanDiego.com</div>
+                </div>
+                <div class="pt-6">
+                    <p class="mb-4 font-bold">Follow our social media</p>
+                    <div class="flex space-x-4">
+                        <i class="fa-brands fa-facebook-f bg-white/10 p-3 rounded-full"></i>
+                        <i class="fa-brands fa-linkedin-in bg-white/10 p-3 rounded-full"></i>
+                        <i class="fa-brands fa-instagram bg-white/10 p-3 rounded-full"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white p-10 rounded-2xl text-slate-800 shadow-2xl">
+                <form class="space-y-4">
+                    <div><label class="block text-sm font-bold mb-1">Full Name</label><input type="text" placeholder="Enter your name" class="w-full bg-slate-100 p-3 rounded-md"></div>
+                    <div><label class="block text-sm font-bold mb-1">Phone Number</label><input type="text" placeholder="Enter your phone number" class="w-full bg-slate-100 p-3 rounded-md"></div>
+                    <div><label class="block text-sm font-bold mb-1">Email</label><input type="email" placeholder="Enter your email" class="w-full bg-slate-100 p-3 rounded-md"></div>
+                    <div><label class="block text-sm font-bold mb-1">Preferred Appointment Time</label><input type="text" placeholder="Select your preferred time" class="w-full bg-slate-100 p-3 rounded-md"></div>
+                    <div><label class="block text-sm font-bold mb-1">Message</label><textarea rows="4" placeholder="Write Here..." class="w-full bg-slate-100 p-3 rounded-md"></textarea></div>
+                    <button class="bg-accent w-full py-4 rounded-md font-bold shadow-lg">Submit <i class="fa-solid fa-paper-plane ml-2"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-20 px-10 bg-slate-50">
+    <h2 class="text-center text-5xl font-bold mb-12">Frequently <span class="text-primary">Asked Questions</span></h2>
+
+    <div class="max-w-4xl mx-auto space-y-4">
+
+        <!-- FAQ 1 -->
+        <div class="faq-item bg-primary text-white rounded-xl p-6 shadow-lg">
+            <div class="flex justify-between items-center cursor-pointer">
+                <h4 class="font-bold text-lg">What services do you offer?</h4>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <p class="faq-content mt-4 opacity-90 border-t border-white/20 pt-4 hidden">
+                We provide a full range of plumbing and heating services, including leak repairs,
+                boiler installations, heating system upgrades, emergency callouts, and routine
+                maintenance for both homes and businesses.
+            </p>
+        </div>
+        
+
+        <!-- FAQ 2 -->
+        <div class="faq-item bg-white p-6 rounded-xl shadow-sm cursor-pointer">
+        <div class="flex justify-between items-center">
+        <h4 class="font-bold text-lg">Are you available for emergency repairs?</h4>
+        <i class="fa-solid fa-chevron-right text-sm"></i>
+    </div>
+
+    <!-- Hidden content -->
+    <p class="faq-content hidden mt-4">
+        We provide a full range of plumbing and heating services, including leak repairs,
+        boiler installations, heating system upgrades, emergency callouts, and routine
+        maintenance for both homes and businesses.
+    </p>
+</div>
+
+   <!-- FAQ 3 -->
+        <div class="faq-item bg-white p-6 rounded-xl shadow-sm cursor-pointer">
+        <div class="flex justify-between items-center">
+        <h4 class="font-bold text-lg">hat areas do you cover?</h4>
+        <i class="fa-solid fa-chevron-right text-sm"></i>
+    </div>
+
+    <!-- Hidden content -->
+    <p class="faq-content hidden mt-4">
+        We provide a full range of plumbing and heating services, including leak repairs,
+        boiler installations, heating system upgrades, emergency callouts, and routine
+        maintenance for both homes and businesses.
+    </p>
+</div>
+
+    </div>
+</section>
+
+
+    <footer class="bg-primary border-t border-white/10 text-white px-10 py-16 grid md:grid-cols-4 gap-12">
+        <div class="space-y-6">
+            <h2 class="text-3xl font-bold">KPLUX</h2>
+            <p class="text-sm opacity-70">The KPLUX difference is all about trust, speed, and precision. Keeping your home safe, warm, and running efficiently.</p>
+            <p class="font-bold">License # 7894561</p>
+            <button class="bg-accent text-black px-6 py-3 rounded-md font-bold text-sm">Request Service <i class="fa-solid fa-chevron-right ml-2"></i></button>
+        </div>
+        <div>
+            <h4 class="font-bold mb-6">SERVICES</h4>
+            <ul class="space-y-3 opacity-70 text-sm">
+                <li>Drain Cleaning</li>
+                <li>Leak Detection</li>
+                <li>Water Heater Repair & Install</li>
+                <li>Sewer Line Repair</li>
+                <li>Emergency Plumbing</li>
+                <li>Pipe Repair & Repiping</li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-bold mb-6">QUICK LINKS</h4>
+            <ul class="space-y-3 opacity-70 text-sm">
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Terms of Use</li>
+                <li>Privacy Policy</li>
+                <li>Sitemap</li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-bold mb-6">GET IN TOUCH</h4>
+            <ul class="space-y-3 opacity-70 text-sm">
+                <li><i class="fa-solid fa-envelope mr-2"></i> Info@KpluxPlumbingSanDiego.com</li>
+                <li><i class="fa-solid fa-phone mr-2"></i> +1 (760) 696-8781</li>
+                <li><i class="fa-solid fa-location-dot mr-2"></i> 549 W Market St, Akron, Ohio, 44303 United States</li>
+            </ul>
+        </div>
+    </footer>
+    <div class="bg-primary text-center py-6 text-white text-xs border-t border-white/5 opacity-70">
+        Copyright © 2025. Kplux Plumbing. All Rights Reserved.
+    </div>
+
+</body>
+</html>
